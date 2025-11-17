@@ -1,11 +1,3 @@
-export default function Pacientes() {
-  return (
-    <div style={{ textAlign: "center", padding: "100px", color: "#fff", backgroundColor: "#0d1b2a", height: "100vh" }}>
-      <h1>Área do Paciente</h1>
-      <p>Em breve: busque médicos e agende suas consultas com facilidade.</p>
-    </div>
-  );
-}
 import Link from "next/link";
 import "../styles/home.css"; // reutiliza o mesmo estilo
 
@@ -48,4 +40,3 @@ export default function Pacientes() {
     </div>
   );
 }
-

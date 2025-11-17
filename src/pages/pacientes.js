@@ -1,11 +1,12 @@
 import Link from "next/link";
-import "../styles/home.css"; // reutiliza o mesmo estilo
 
 export default function Pacientes() {
   return (
     <div className="home-container">
       <header className="navbar">
-        <div className="logo">Agendai<span>+</span></div>
+        <div className="logo">
+          Agendai<span>+</span>
+        </div>
         <nav>
           <Link href="/">Início</Link>
           <Link href="#">Ajuda</Link>
@@ -15,9 +16,12 @@ export default function Pacientes() {
 
       <main className="main-content">
         <div className="text-section">
-          <h1>Área do <span>Paciente</span></h1>
+          <h1>
+            Área do <span>Paciente</span>
+          </h1>
           <p>
-            Encontre médicos, agende consultas e acompanhe seus horários de forma simples e rápida.
+            Encontre médicos, agende consultas e acompanhe seus horários de forma
+            simples e rápida.
           </p>
           <div className="buttons">
             <Link href="/cadastroPaciente" className="btn btn-primary">

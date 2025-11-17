@@ -1,3 +1,5 @@
+/* src/styles/home.css – estilos do chat lateral */
+
 .chat-container {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
@@ -19,7 +21,7 @@
 
 .chat-message.user {
   background-color: #2563eb;
-  color: white;
+  color: #fff;
   margin-left: auto;
   text-align: right;
 }
@@ -31,8 +33,14 @@
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .chat-sidebar {
@@ -52,18 +60,18 @@
 
 .chat-sidebar h2 {
   background-color: #1e3a8a;
-  color: white;
+  color: #fff;
   padding: 8px;
   border-radius: 10px;
 }
 
 /* === Remover barra branca / scroll lateral do chat === */
 .hide-scrollbar::-webkit-scrollbar {
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
 }
 
 .hide-scrollbar {
   -ms-overflow-style: none; /* IE e Edge */
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none;    /* Firefox */
 }

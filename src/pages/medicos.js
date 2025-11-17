@@ -1,7 +1,5 @@
 import Link from "next/link";
-import "../styles/home.css"; // usa o mesmo estilo base da home
 
-// Versão simples da tela do médico (mantida, mas sem export default)
 function MedicosSimples() {
   return (
     <div
@@ -19,7 +17,6 @@ function MedicosSimples() {
   );
 }
 
-// Versão principal da página (esta será a rota /medicos)
 export default function Medicos() {
   return (
     <div className="home-container">

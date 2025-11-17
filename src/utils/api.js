@@ -184,3 +184,17 @@ export async function atualizarStatusConsulta(id, status) {
     return { error: "Erro ao atualizar status da consulta" };
   }
 }
+// 🔹 Listar horários disponíveis de um médico
+export async function listarHorarios(idMedico) {
+  try {
+    // 🔧 AJUSTA ESSA ROTA PARA O QUE TEU BACKEND USA DE VERDADE
+    const response = await axios.get(`${API_URL}/medicos/${idMedico}/horarios`);
+    return response.data; // por exemplo, um array de horários
+  } catch (error) {
+    console.error(
+      "Erro ao listar horários:",
+      error.response?.data || error.message
+    );
+    return [];
+  }
+}
